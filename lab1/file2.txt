@@ -1,2 +1,3 @@
 text for file 2
 add text
+add text
