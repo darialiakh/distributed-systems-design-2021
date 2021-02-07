@@ -1,2 +1,3 @@
-text for file 2
+text for file 2 - branch
+add text
 add text
