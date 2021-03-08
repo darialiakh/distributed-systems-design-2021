@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "0yLiIgiDaCp3kgTDRVUbb0ii9gbgRiwycwcTLHZPe2TUfyVPToFtYkfoureg0diUUOvpWJHAdDiCVgT07Ny0VA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\darli\\source\\repos\\darialiakh\\distributed-systems-design-2021\\FacadeService\\FacadeService.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\darli\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512"
+  ],
+  "logs": []
+}

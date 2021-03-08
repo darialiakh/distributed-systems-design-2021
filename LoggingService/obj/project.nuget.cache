@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "h3N4vKFjcjsoVkVfHXt6q4E8JtKM0cFjqUkp6MLoWDvOqwcBcyazbzQrHmV9sfsbysYez2IsnUCkUlcbmXAZ+g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\darli\\source\\repos\\darialiakh\\distributed-systems-design-2021\\LoggingService\\LoggingService.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\darli\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512"
+  ],
+  "logs": []
+}
