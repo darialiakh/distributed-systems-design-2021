@@ -1,8 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using FacadeService.Dto;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
-
-using FacadeService.Dto;
+using System.Collections.Generic;
 using System.Text.Json;
 
 namespace FacadeService.Controllers
@@ -13,6 +13,13 @@ namespace FacadeService.Controllers
     {
         private readonly ILogger<FacadeController> _logger;
 
+        private readonly List<string> loggingServiceUrls = new List<string>
+        {
+            $"https://localhost:44303/logging",
+            $"https://localhost:44304/logging",
+            $"https://localhost:44305/logging"
+        };
+
         public FacadeController(ILogger<FacadeController> logger)
         {
             _logger = logger;
@@ -21,11 +28,11 @@ namespace FacadeService.Controllers
         [HttpGet]
         public string Get()
         {
-            var loggingData = WebUtilities.Get($"https://localhost:44303/logging");
+            var loggingData = WebUtilities.Get(GetRandomServiceString());
 
-            var messagesData = WebUtilities.Get($"https://localhost:44348/messages");
+            //var messagesData = WebUtilities.Get($"https://localhost:44348/messages");
 
-            return loggingData + messagesData;
+            return loggingData;// + messagesData;
         }
 
         [HttpPost]
@@ -37,9 +44,16 @@ namespace FacadeService.Controllers
                 Message = str
             };
 
-            var data = WebUtilities.Post($"https://localhost:44303/logging", JsonSerializer.Serialize(msg));
+            var data = WebUtilities.Post(GetRandomServiceString(), JsonSerializer.Serialize(msg));
 
             return data;
+        }
+
+        private string GetRandomServiceString()
+        {
+            var random = new Random();
+            int index = random.Next(loggingServiceUrls.Count);
+            return loggingServiceUrls[index];
         }
     }
 }

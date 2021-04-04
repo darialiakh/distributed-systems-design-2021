@@ -73,7 +73,6 @@ namespace FacadeService
             return response;
         }
 
-
         private static string SendData(string url, string body, string method)
         {
             var request = (HttpWebRequest)WebRequest.Create(url);
@@ -94,6 +93,5 @@ namespace FacadeService
 
             return GetResponse(response);
         }
-
     }
 }

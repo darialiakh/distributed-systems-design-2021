@@ -3,11 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacadeService", "FacadeService\FacadeService.csproj", "{40DE2379-75E9-4303-BBDB-90C7B6FD797F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FacadeService", "FacadeService\FacadeService.csproj", "{40DE2379-75E9-4303-BBDB-90C7B6FD797F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggingService", "LoggingService\LoggingService.csproj", "{FFFAAFB8-FB70-46EC-A1F1-7EAEFDB8E302}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoggingService", "LoggingService\LoggingService.csproj", "{FFFAAFB8-FB70-46EC-A1F1-7EAEFDB8E302}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessagesService", "MessagesService\MessagesService.csproj", "{12671E0E-EF71-4C31-9051-D1EC9DB93CAF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MessagesService", "MessagesService\MessagesService.csproj", "{12671E0E-EF71-4C31-9051-D1EC9DB93CAF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoggingService2", "LoggingService2\LoggingService2.csproj", "{A0AC012B-8154-4856-BE04-2A33C89E365A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoggingService3", "LoggingService3\LoggingService3.csproj", "{98D9108B-2932-4286-8780-55AD5E8D75AD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +31,14 @@ Global
 		{12671E0E-EF71-4C31-9051-D1EC9DB93CAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{12671E0E-EF71-4C31-9051-D1EC9DB93CAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{12671E0E-EF71-4C31-9051-D1EC9DB93CAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0AC012B-8154-4856-BE04-2A33C89E365A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0AC012B-8154-4856-BE04-2A33C89E365A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0AC012B-8154-4856-BE04-2A33C89E365A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0AC012B-8154-4856-BE04-2A33C89E365A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98D9108B-2932-4286-8780-55AD5E8D75AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98D9108B-2932-4286-8780-55AD5E8D75AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98D9108B-2932-4286-8780-55AD5E8D75AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98D9108B-2932-4286-8780-55AD5E8D75AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
