@@ -1,0 +1,15 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Consumer/bin/Debug/netcoreapp3.1
+/Consumer/obj
+/Consumer/Properties
+/Consumer2/bin/Debug/netcoreapp3.1
+/Consumer2/obj
+/Consumer2/Properties
+/Logic/bin/Debug/netcoreapp3.1
+/Logic/obj
+/Producer/bin/Debug/netcoreapp3.1
+/Producer/obj
+/Producer/Properties
