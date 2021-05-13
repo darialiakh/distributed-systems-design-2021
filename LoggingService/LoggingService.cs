@@ -20,6 +20,7 @@ namespace LoggingService
             var data = "";
 
             var map = await _hzClient.GetMapAsync<Guid, string>("messages");
+
             var messages = await map.GetEntriesAsync();
 
             foreach (var msg in messages.Values)

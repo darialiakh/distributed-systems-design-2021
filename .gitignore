@@ -327,3 +327,6 @@ ASALocalRun/
 *.nvuser
 
 Properties/*
+/.vscode
+/FacadeService/.config
+/MessagesService2/Dockerfile

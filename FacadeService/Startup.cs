@@ -1,8 +1,11 @@
+using Logic.DTO;
+using Logic.QueueSender;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
 
 namespace FacadeService
 {
@@ -18,6 +21,11 @@ namespace FacadeService
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            var serviceClientSettingsConfig = Configuration.GetSection("RabbitMq");
+            services.Configure<RabbitMqConfiguration>(serviceClientSettingsConfig);
+
+            services.AddTransient<IQueueSender, QueueSender>();
+
             services.AddControllers();
         }
 
@@ -32,6 +40,7 @@ namespace FacadeService
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
 
             app.UseAuthorization();
 

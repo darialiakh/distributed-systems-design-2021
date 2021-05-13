@@ -34,7 +34,7 @@ namespace MessagesService.Controllers
                 }
             }
 
-            _logger.LogInformation($"MessagesService return messages: {data}");
+            _logger.LogInformation($"MessagesService2 return messages: {data}");
 
             return data;
         }
