@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MessagesService", "Messages
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2CE1C5C8-8070-48F4-A3D0-0746C6EF3A1C}"
 	ProjectSection(SolutionItems) = preProject
-		.drone.yml = .drone.yml
+		drone.yml = drone.yml
 	EndProjectSection
 EndProject
 Global
