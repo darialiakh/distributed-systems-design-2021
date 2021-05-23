@@ -3,11 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacadeService", "FacadeService\FacadeService.csproj", "{40DE2379-75E9-4303-BBDB-90C7B6FD797F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FacadeService", "FacadeService\FacadeService.csproj", "{40DE2379-75E9-4303-BBDB-90C7B6FD797F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggingService", "LoggingService\LoggingService.csproj", "{FFFAAFB8-FB70-46EC-A1F1-7EAEFDB8E302}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoggingService", "LoggingService\LoggingService.csproj", "{FFFAAFB8-FB70-46EC-A1F1-7EAEFDB8E302}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessagesService", "MessagesService\MessagesService.csproj", "{12671E0E-EF71-4C31-9051-D1EC9DB93CAF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MessagesService", "MessagesService\MessagesService.csproj", "{12671E0E-EF71-4C31-9051-D1EC9DB93CAF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2CE1C5C8-8070-48F4-A3D0-0746C6EF3A1C}"
+	ProjectSection(SolutionItems) = preProject
+		.drone.yml = .drone.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
