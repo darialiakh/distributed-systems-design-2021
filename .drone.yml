@@ -14,13 +14,13 @@ steps:
   commands:
   - ping -c 3 8.8.8.8
 
-- name: instalation
+- name: installation-python
   image: python
   commands:
   - pip install Django
   - pip install version
 
-- name: instalation2
+- name: installation-dotnet
   image: mcr.microsoft.com/dotnet/sdk
   commands:
   - dotnet add package Newtonsoft.Json
