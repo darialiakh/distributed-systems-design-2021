@@ -25,9 +25,13 @@ steps:
   commands:
   - dotnet add package Newtonsoft.Json
 
-- name: dotnet
+- name: dotnet-list
   image: mcr.microsoft.com/dotnet/sdk
   commands:
   - dotnet sln list
-  - dotnet build FacadeService.sln
+
+- name: dotnet-build-sln
+  image: mcr.microsoft.com/dotnet/sdk
+  commands:
+  - dotnet build distributed-systems-design-2021.sln
 
