@@ -20,6 +20,11 @@ steps:
   - pip install Django
   - pip install version
 
+- name: instalation2
+  image: mcr.microsoft.com/dotnet/sdk
+  commands:
+  - dotnet add package Newtonsoft.Json
+
 - name: dotnet
   image: mcr.microsoft.com/dotnet/sdk
   commands:
