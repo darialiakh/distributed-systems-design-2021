@@ -3,8 +3,8 @@ type: docker
 name: default
 
 steps:
-- name: step1
-  image: alpine
+- name: hello
+  image: python
   commands:
   - echo hello
   - echo world
