@@ -18,7 +18,6 @@ steps:
   image: python
   commands:
   - pip install Django
-  - pip install version
 
 - name: installation-dotnet
   image: mcr.microsoft.com/dotnet/sdk
