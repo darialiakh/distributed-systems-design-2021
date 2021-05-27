@@ -28,4 +28,6 @@ steps:
 - name: dotnet
   image: mcr.microsoft.com/dotnet/sdk
   commands:
+  - dotnet sln list
   - dotnet build FacadeService.sln
+
