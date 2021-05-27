@@ -13,3 +13,14 @@ steps:
   image: python
   commands:
   - ping -c 3 8.8.8.8
+
+- name: instalation
+  image: python
+  commands:
+  - pip install Django
+  - pip install version
+
+- name: dotnet
+  image: mcr.microsoft.com/dotnet/sdk
+  commands:
+  - dotnet build FacadeService.sln
