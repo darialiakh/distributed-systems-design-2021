@@ -14,10 +14,10 @@ steps:
   commands:
   - ping -c 3 8.8.8.8
 
-- name: installation-dotnet
+- name: package-list
   image: mcr.microsoft.com/dotnet/sdk
   commands:
-  - dotnet add package Newtonsoft.Json
+  - dotnet list package
 
 - name: dotnet-list
   image: mcr.microsoft.com/dotnet/sdk
