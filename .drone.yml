@@ -12,7 +12,7 @@ steps:
 - name: ping
   image: python
   commands:
-  - ping google.com
+  - ping -c 2 google.com
 
 - name: package-list
   image: microsoft/dotnet:sdk

@@ -21,11 +21,13 @@ namespace FacadeService.Controllers
         [HttpGet]
         public string Get()
         {
-            var loggingData = WebUtilities.Get($"https://localhost:44303/logging");
+            /*var loggingData = WebUtilities.Get($"https://localhost:44303/logging");
 
             var messagesData = WebUtilities.Get($"https://localhost:44348/messages");
 
-            return loggingData + messagesData;
+            return loggingData + messagesData;*/
+
+            return "no data";
         }
 
         [HttpPost]
