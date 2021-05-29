@@ -12,20 +12,23 @@ steps:
 - name: ping
   image: python
   commands:
-  - ping -c 3 8.8.8.8
+  - ping google.com
 
 - name: package-list
-  image: mcr.microsoft.com/dotnet/sdk
+  image: microsoft/dotnet:sdk
   commands:
+  - dotnet restore
   - dotnet list package
 
 - name: dotnet-list
-  image: mcr.microsoft.com/dotnet/sdk
+  image: microsoft/dotnet:sdk
   commands:
   - dotnet sln list
 
-- name: dotnet-build-sln
-  image: mcr.microsoft.com/dotnet/sdk
+- name: dotnet-build
+  image: microsoft/dotnet:sdk
   commands:
-  - dotnet build distributed-systems-design-2021.sln
+  - dotnet build
+
+
 
