@@ -15,18 +15,18 @@ steps:
   - ping -c 2 google.com
 
 - name: package-list
-  image: microsoft/dotnet:sdk
+  image: mcr.microsoft.com/dotnet/aspnet
   commands:
   - dotnet restore
   - dotnet list package
 
 - name: dotnet-list
-  image: microsoft/dotnet:sdk
+  image: mcr.microsoft.com/dotnet/aspnet
   commands:
   - dotnet sln list
 
 - name: dotnet-build
-  image: microsoft/dotnet:sdk
+  image: mcr.microsoft.com/dotnet/aspnet
   commands:
   - dotnet build
 
