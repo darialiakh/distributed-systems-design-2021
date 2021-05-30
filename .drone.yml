@@ -15,7 +15,7 @@ steps:
   - ping -c 2 google.com
 
 - name: package-list
-  image: mcr.microsoft.com/dotnet/aspnet
+  image: mcr.microsoft.com/dotnet/sdk
   commands:
   - dotnet restore
   - dotnet list package
