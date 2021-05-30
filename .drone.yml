@@ -21,12 +21,12 @@ steps:
   - dotnet list package
 
 - name: dotnet-list
-  image: mcr.microsoft.com/dotnet/aspnet
+  image: mcr.microsoft.com/dotnet/sdk
   commands:
   - dotnet sln list
 
 - name: dotnet-build
-  image: mcr.microsoft.com/dotnet/aspnet
+  image: mcr.microsoft.com/dotnet/sdk
   commands:
   - dotnet build
 
