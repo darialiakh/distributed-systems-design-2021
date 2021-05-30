@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Net;
+using System.Net.Http;
 using System.Text;
+using Newtonsoft.Json;
 using static System.Int32;
 
 namespace FacadeService
@@ -43,6 +45,18 @@ namespace FacadeService
             return SendData(url, body, "POST");
         }
 
+        public static string Put(string url, string body)
+        {
+            var response = "";
+            using (var client = new HttpClient())
+            {
+                response = client.PutAsync(url, new StringContent(body, Encoding.UTF8, "application/json")).GetAwaiter().GetResult().Content.ReadAsStringAsync().GetAwaiter().GetResult();
+            };
+
+
+            return response;
+        }
+
         public static string Post(string url)
         {
             return SendData(url, null, "POST");
@@ -76,23 +90,23 @@ namespace FacadeService
 
         private static string SendData(string url, string body, string method)
         {
-            var request = (HttpWebRequest)WebRequest.Create(url);
-            request.KeepAlive = false;
-            request.Method = method;
-            request.Timeout = MaxValue;
-            request.ProtocolVersion = HttpVersion.Version10;
-            request.ContentType = "application/json";
+            //var request = (HttpWebRequest)WebRequest.Create(url);
+            //request.KeepAlive = false;
+            //request.Method = method;
+            //request.Timeout = MaxValue;
+            //request.ProtocolVersion = HttpVersion.Version10;
+            //request.ContentType = "application/json";
 
-            using (var streamWriter = new StreamWriter(request.GetRequestStream()))
-            {
-                streamWriter.Write(body);
-                streamWriter.Flush();
-                streamWriter.Close();
-            }
+            //using (var streamWriter = new StreamWriter(request.GetRequestStream()))
+            //{
+            //    streamWriter.Write(body);
+            //    streamWriter.Flush();
+            //    streamWriter.Close();
+            //}
 
-            var response = (HttpWebResponse)request.GetResponse();
+            //var response = (HttpWebResponse)request.GetResponse();
 
-            return GetResponse(response);
+            return "";
         }
 
     }

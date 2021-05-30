@@ -12,10 +12,12 @@ namespace FacadeService.Controllers
     public class FacadeController : ControllerBase
     {
         private readonly ILogger<FacadeController> _logger;
+        private readonly ConsulService _consulService;
 
-        public FacadeController(ILogger<FacadeController> logger)
+        public FacadeController(ILogger<FacadeController> logger, ConsulService consulService)
         {
             _logger = logger;
+            _consulService = consulService;
         }
 
         [HttpGet]
